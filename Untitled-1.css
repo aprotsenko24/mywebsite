@@ -1,0 +1,369 @@
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-gradient: linear-gradient(225deg, #fefefe, #474747);
+    --content-color: #e590ff;
+    --heading-color: #6c1187;
+    --text-color: aliceblue;
+    --text2-color: linear-gradient(360deg,#fefefe, #000000);
+    --text3-color: linear-gradient(360deg, #fefefe, #000000, #fefefe);
+}
+body {
+    padding: 0;
+    background: var(--background-gradient);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    max-height: 50%;
+    max-width: 50%;
+    min-height: auto;
+    min-width: auto;
+    position:absolute;
+    left: -10px;
+}
+.container {
+    margin: auto;
+    padding: 15px;
+    max-width: 1000px;
+    min-width: 300px;
+    width: 100%;
+}
+.top{
+    display: flex;
+}
+.title {
+    background-image: url(../../WomensMarchSigns.jpeg);
+    background-size: cover;
+    background-position: 50% 35%;
+    background-attachment: scroll;
+    border-radius: 50px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    min-width: 300px;
+    width: 100%;
+}
+strong {
+    font-family: "Lucida Handwriting", cursive;
+    display: block;
+    text-align: center;
+    font-size: 150%;
+    margin-block: 10px;
+    padding-block: 10px;
+}
+.content-container {
+    margin-left: 20px;
+    background: var(--content-color);
+    border-radius: 20px;
+    padding-bottom: 5px;
+    max-width: 400px;
+    min-width: auto;
+}
+h2 {
+    font-size: 180%;
+    box-sizing: content-box;
+    background: var(--text-color);
+    border-radius: 20px;
+    text-align: center;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.content{
+    margin-left: 50px;
+    font-size: 130%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li:hover {
+    color: #b000ea;
+    transition: 0.4s;
+    font-weight: 450;
+}
+ol {
+    list-style-type: upper-roman;
+}
+ol li {
+    margin-block: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.material-symbols-outlined {position: relative;
+    top: 5px; 
+    right: 7px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24
+}
+.align-content{
+    display:flex;
+}
+.heading1{
+    margin-inline: 5px;
+    width:fit-content;
+}
+h3{
+    border: 3px groove #ffffc4;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--heading-color);
+    border-radius: 40px;
+    padding-block: 12px;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+.text{
+    text-indent: 1em;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom:7.5px;
+    padding: 5px;
+    min-height: 220px;
+    max-height: fit-content;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    font-size: 120%;
+}
+.reasons{
+    padding-top: 5px;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+.group{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.1)
+      );
+    font-family: "Poppins", serif;
+    font-style: normal;
+    margin-top: 10px;
+}
+.box-reason{
+    padding: 10px;
+    border-bottom: 3px groove #ffffc4;
+}
+.header{
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 20px;
+    padding-block: 5px;
+    font-size: large;
+    font-weight: 600;
+    width:95%;
+    color: var(--text-color)
+}
+.box-reason .reason {
+    display: none;
+    font-size: 120%;
+}
+.box-reason .reason.open{
+    padding-inline: 25px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5%;
+    align-items: flex-start;
+}
+.pg{
+    margin-left: 5%;
+    margin-right:7.5%;
+    margin-top: 2.5%;
+    text-align: justify;
+    flex:1;
+    margin-bottom: 2.5%;
+}
+.paygap{
+    margin-inline: 2.5%;
+    margin-top: 2.5%;
+    border: 5px solid var(--content-color);
+    max-height: 25%;
+    max-width: 25%;
+    flex-shrink: 0;
+    float:right;
+}
+.education{
+    margin-inline: 4%;
+    margin-block: 4%;
+    border: 5px solid var(--content-color);
+    min-height: auto;
+    min-width: auto;
+    max-height: 40%;
+    max-width: 40%;
+    flex-shrink: 0;
+    float:right;
+}
+.employment{
+    margin-inline: 4%;
+    margin-block: 4%;
+    border: 5px solid var(--content-color);
+    min-height: auto;
+    min-width: auto;
+    max-height: 40%;
+    max-width: 40%;
+    flex-shrink: 0;
+    float:right;
+}
+.FGM{
+    margin-inline: 4%;
+    margin-block: 4%;
+    border: 5px solid var(--content-color);
+    min-height: auto;
+    min-width: auto;
+    max-height: 40%;
+    max-width: 40%;
+    flex-shrink: 0;
+    float:right;
+}
+i {
+    float: right;
+    margin-right:20px;
+    padding:3px;
+}
+i:hover{
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+    opacity: 50%;
+    transition: .6s;
+    background-color: aliceblue;
+    border-radius: 3px;
+}
+.heading2{
+    margin-inline: 5px;
+    margin-top: 20px;
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+.text2{
+    text-indent: 1em;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 15px;
+    margin-bottom:7.5px;
+    padding: 5px;
+    min-height: 220px;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    font-size: 120%;
+}
+.comment {
+    opacity: 80%;
+    font-style:italic;
+    font-size: 90%;
+    text-align: center;
+}
+.slider {
+    width:1000px;
+    overflow-x: hidden;
+    display:flex;
+}
+.slider-items{
+    width:13000px;
+    display:flex;
+    transition: .7s;
+}
+.slider-item{
+    display:flex;
+    width:1000px;
+}
+.buttons {
+    position:absolute;
+    top: 245%;
+    display: inline-block;
+    justify-content: space-between;
+}
+.buttons .bx.bxs-chevron-right.next:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: .8s ease;
+}
+.buttons .bx.bxs-chevron-left.prev:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: .8s ease;
+}
+.buttons .bx.bxs-chevron-right.next  {
+    position: absolute;
+    left: 947.5px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);    
+    border-radius: 20% 0% 0% 20%;
+    padding-block: 20px;
+    animation: .7s ease;
+}
+.buttons .bx.bxs-chevron-left.prev  {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0% 20% 20% 0%;
+    padding-block: 20px;
+}
+#bottom-text{
+    color: var(--text-color);
+    display: grid;
+}
+.photo{
+    height:35%;
+    width:35%;
+    border-radius: 5%;
+}
+.mother-unemployment .text2 {
+    color:aliceblue;
+}
+.endtext{
+    margin-inline: 2.5%;
+    margin-bottom: 2.5%;
+}
+.comment2 {
+    opacity: 0.5;
+    font-style:italic;
+    font-size: 90%;
+    text-align: center;
+    color: aliceblue;
+    margin-block: 2.5%;
+}
+.buttons span{
+    position:relative;
+}
+.photos{
+    background: url(../../../Desktop/RealMenAreFeminists.jpg) left, url(../../../Desktop/boysarefeminists.jpg) 56% 50%, url(../../../Desktop/noanswer.jpg) right;
+    height: 375px;
+    border-radius: 20px;
+    width: 100%;
+    display:flex;
+    margin-inline: auto;
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding-right: 100px;
+}
+.respect{
+    display:flex;
+}
+.mum{
+    border-radius: 50px;
+    min-height: auto;
+    min-width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    display:block;
+    margin-inline: auto;
+}
