@@ -38,7 +38,7 @@ body {
     display: flex;
 }
 .title {
-    background-image: url(../../WomensMarchSigns.jpeg);
+    background-image: url(WomensMarchSigns.jpeg);
     background-size: cover;
     background-position: 50% 35%;
     background-attachment: scroll;
@@ -270,6 +270,7 @@ i:hover{
     width:1000px;
     overflow-x: hidden;
     display:flex;
+    position:relative;
 }
 .slider-items{
     width:13000px;
@@ -280,24 +281,17 @@ i:hover{
     display:flex;
     width:1000px;
 }
+.slider-container{
+    height: max-content;
+}
 .buttons {
-    position:absolute;
-    top: 245%;
-    display: inline-block;
+    position:relative;
+    display: flex;
     justify-content: space-between;
-}
-.buttons .bx.bxs-chevron-right.next:hover{
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: .8s ease;
-}
-.buttons .bx.bxs-chevron-left.prev:hover{
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: .8s ease;
 }
 .buttons .bx.bxs-chevron-right.next  {
     position: absolute;
+    top: -310px;
     left: 947.5px;
     cursor: pointer;
     font-size: 2rem;
@@ -309,6 +303,9 @@ i:hover{
     animation: .7s ease;
 }
 .buttons .bx.bxs-chevron-left.prev  {
+    position:absolute;
+    top: -310px;
+    left: 0px;
     cursor: pointer;
     font-size: 2rem;
     color: #ffffff;
@@ -316,6 +313,17 @@ i:hover{
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0% 20% 20% 0%;
     padding-block: 20px;
+    animation: .7s ease;
+}
+.buttons .bx.bxs-chevron-right.next:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: .8s ease;
+}
+.buttons .bx.bxs-chevron-left.prev:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: .8s ease;
 }
 #bottom-text{
     color: var(--text-color);
@@ -345,7 +353,7 @@ i:hover{
     position:relative;
 }
 .photos{
-    background: url(../../../Desktop/RealMenAreFeminists.jpg) left, url(../../../Desktop/boysarefeminists.jpg) 56% 50%, url(../../../Desktop/noanswer.jpg) right;
+    background: url(RealMenAreFeminists.jpg) left, url(boysarefeminists.jpg) 56% 50%, url(noanswer.jpg) right;
     height: 375px;
     border-radius: 20px;
     width: 100%;
